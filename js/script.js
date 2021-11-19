@@ -13,15 +13,15 @@ let prezzoBiglietto;
 let etaUtente = parseInt(prompt('Inserisci età: '));
 while ((etaUtente%1!=0) || (etaUtente<0)) {
     etaUtente = parseInt(prompt('Inserisci età: '));
-    console.log("Etò: " + etaUtente);
 }
+console.log("Etò: " + etaUtente);
 
 //inserisci numero di km valido solo se maggiore di 0 ed è un numero
 let numeroKm = parseInt(prompt('Inserisci numero chilometri : '));
 while ((numeroKm<0) || (numeroKm%1!=0)) {
     numeroKm = parseInt(prompt('Inserisci numero chilometri : '));
-    console.log("Numero km: " + numeroKm);
 }
+console.log("Numero km: " + numeroKm);
 
 //calcolo prezzo biglietto
 if ((etaUtente > 17) && (etaUtente < 65)) {
